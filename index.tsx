@@ -7,7 +7,6 @@
 import { NavContextMenuPatchCallback } from "@api/ContextMenu";
 import { definePluginSettings, useSettings } from "@api/Settings";
 import ErrorBoundary from "@components/ErrorBoundary";
-import { Devs } from "@utils/constants";
 import { classes } from "@utils/misc";
 import definePlugin, { OptionType } from "@utils/types";
 import type { Channel, User } from "@vencord/discord-types";
@@ -255,7 +254,7 @@ const UserContext: NavContextMenuPatchCallback = (children, { user }: UserContex
 export default definePlugin({
     name: "FollowUser",
     description: "Adds a follow option in the user context menu to always be in the same VC as them",
-    authors: [Devs.Nandak070],
+    authors: [{ name: "Nandak070", id: 1219803151180370021n }],
 
     settings,
 
